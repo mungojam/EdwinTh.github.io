@@ -51,7 +51,6 @@ When creating an object in R, you are binding the name of the object to a value.
 ```{r}
 x <- 50
 ```
-
 Normally, we give R the object name to retrieve the corresponding value. However, when we save the objects name as an expression, it is not evaluated but stored as `name` object. (Confusingly, when the expression of length 1, it is of class `expression` instead of class `name`). So `name` is a subclass of expression, it is created when the unevaluated R code will retrieve the value of an object once evaluated.
 
 ```{r}
@@ -83,7 +82,7 @@ And finally to make matters nice and unclear, a name is also called a `symbol` a
 
 ## `call`
 
-When we delaying the evaluation of a function call, we arrive at the second subcategory of expressions: the `call`. The function to be called, with the names of the objects used for the arguments, are stored until further notice.
+When we delay the evaluation of a function call, we arrive at the second subcategory of expressions: the `call`. The function to be called, with the names of the objects used for the arguments, are stored until further notice.
 
 ```{r}
 wait_for_it <- quote(x + y)
